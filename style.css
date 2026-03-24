@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "poppins", sans-serif;
+    /* border: 1px solid white;*/
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.navbar-logo {
+    width: 230px;
+    height: 50px;
+}
+
+.mybtn {
+    border: 2px solid white;
+    background: rgb(90, 83, 83);
+    color: white;
+}
+
+.mybtn:hover {
+    background: transparent;
+    color: rgb(24, 78, 110);
+}
+
+.image-container {
+
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    background-image: url("images/front.jpg");
+    background-position: center;
+    background-size: 112%;
+    box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 7px rgb(175, 234, 147), inset 0 0 7px rgb(175, 234, 147)
+}
+
+.hero-section {
+    height: 650px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.para {
+    max-width: 500px;
+}
+
+.main-txt {
+    letter-spacing: 2px;
+    font-size: 9px;
+}
+
+.about-me {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+.about-me {
+
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    background-image: url("images/bike.jpg");
+    background-position: center;
+    background-size: 112%;
+    box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 7px rgb(175, 234, 147), inset 0 0 7px rgb(175, 234, 147)
+}
+
+.section-container {
+    padding-block: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .image-container {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .hero-section {
+        min-height: 72vh;
+    }
+
+    .about-me {
+        width: 20rem;
+        height: 20rem;
+    }
+}
