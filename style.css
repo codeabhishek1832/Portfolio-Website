@@ -2,7 +2,12 @@
 
 * {
     font-family: "poppins", sans-serif;
-    /* border: 1px solid white;*/
+    box-sizing: border-box;
+}
+
+/* 🔥 IMPORTANT FIX */
+body {
+    overflow-x: hidden;
 }
 
 li {
@@ -13,13 +18,12 @@ a {
     text-decoration: none;
 }
 
-
-
 .navbar-logo {
-    width: 230px;
-    height: 50px;
+    width: 180px;
+    height: auto;
 }
 
+/* Button */
 .mybtn {
     border: 2px solid white;
     background: rgb(90, 83, 83);
@@ -31,23 +35,28 @@ a {
     color: rgb(24, 78, 110);
 }
 
+/* 🔥 FIXED IMAGE CONTAINER */
 .image-container {
-
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
     background-image: url("images/front.jpg");
     background-position: center;
-    background-size: 112%;
-    box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 7px rgb(175, 234, 147), inset 0 0 7px rgb(175, 234, 147)
+    background-size: cover;
+    box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 7px rgb(175, 234, 147), inset 0 0 7px rgb(175, 234, 147);
+    margin: auto;
 }
 
+/* 🔥 HERO FIX */
 .hero-section {
-    height: 650px;
+    min-height: 100vh;
+    height: auto;
 }
 
+/* Heading */
 h1 {
     font-size: 4rem;
     font-family: "Merriweather Sans", sans-serif;
@@ -62,23 +71,19 @@ h1 {
     font-size: 9px;
 }
 
+/* 🔥 ABOUT IMAGE FIX */
 .about-me {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-}
-
-.about-me {
-
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
     background-image: url("images/bike.jpg");
     background-position: center;
-    background-size: 112%;
-    box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 7px rgb(175, 234, 147), inset 0 0 7px rgb(175, 234, 147)
+    background-size: cover;
+    box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 7px rgb(175, 234, 147), inset 0 0 7px rgb(175, 234, 147);
+    margin: auto;
 }
 
 .section-container {
@@ -89,31 +94,27 @@ html {
     scroll-behavior: smooth;
 }
 
+/* 🔥 MOBILE RESPONSIVE FIX */
+@media screen and (max-width: 768px) {
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 680px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .image-container {
-        width: 20rem;
-        height: 20rem;
-    }
-
-    .hero-section {
-        min-height: 72vh;
+        max-width: 250px;
     }
 
     .about-me {
-        width: 20rem;
-        height: 20rem;
+        max-width: 250px;
+    }
+
+    .hero-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .navbar-logo {
+        width: 140px;
     }
 }
