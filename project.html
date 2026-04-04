@@ -4,118 +4,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Website</title>
+    <title>My Projects - Portfolio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-black">
-    <!--Navbar start-->
-    <nav class="navbar navbar-expand-lg mt-3 py-3 px-3 bg-info bg-opacity-10 border border-1 border-info rounded">
+<body class="bg-black projects-page">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top mt-3 px-3 py-3 rounded-4 navbar-pro" data-aos="fade-down">
         <div class="container">
-            <a class="navbar-brand" href="#">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="images/logo.png" alt="logo" class="navbar-logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon shadow-0"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3 text-center">
+
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html#about">About</a>
+                        <a class="nav-link nav-pro-link" href="index.html#home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html#skill">Skill</a>
+                        <a class="nav-link nav-pro-link" href="index.html#about">About</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html"> My Project</a>
+                        <a class="nav-link nav-pro-link" href="index.html#skill">Skill</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html#contact">Contact</a>
+                        <a class="nav-link nav-pro-link active" href="project.html">My Project</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-pro-link" href="index.html#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-pro-link" href="index.html#resume">Resume</a>
                     </li>
 
                 </ul>
 
+                <button id="themeBtn" class="btn theme-btn px-4 py-2">
+                    🌙 Dark
+                </button>
             </div>
         </div>
     </nav>
-    <!--My-Projects-Page -->
 
-    <section class="section-container">
-        <div class="container">
-            <h2 class="text-center text-white fw-bold">My Projects</h2>
-            <div class="card-group mt-5 ">
-                <div class="card p-3 mx-4">
-                    <img src="images/pic3.jpg" class="card-img-top" alt="image">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">E-Commerce-Website</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+    <main>
+
+        <!-- Hero / Header -->
+        <section class="projects-hero border border-1 border-secondary rounded p-4" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <span class="text-white text-uppercase main-txt">My Work</span>
+                        <h1 class="text-white fw-bold project-page-title mt-2">
+                            Featured <span class="text-danger">Projects</span>
+                        </h1>
+                        <p class="text-light project-page-para mt-4">
+                            These projects reflect my learning, creativity, and practical skills in frontend and web
+                            development. I focus on building responsive, user-friendly, and clean websites with modern
+                            UI.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="index.html#contact" class="btn btn-danger projects-hero-btn">Hire Me</a>
+                            <a href="index.html" class="btn btn-outline-light projects-hero-btn">Back to Home</a>
+                        </div>
                     </div>
 
-                </div>
-                <div class="card p-3 mx-4">
-                    <img src="images/pic4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Portfolio-Website</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
+                    <div class="col-lg-5 text-center" data-aos="fade-left">
+                       <a href="#projects-list" class="projects-hero-box mx-auto projects-scroll-box text-decoration-none">
+    <div class="projects-hero-inner">
+        <h3 class="text-white mb-3">3+ Projects</h3>
+        <p class="text-light mb-0">Click to view my projects</p>
+    </div>
+</a>
                     </div>
-
-                </div>
-                <div class="card p-3 mx-4">
-                    <img src="images/pic5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Buisness Website</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height action.</p>
-                    </div>
-
                 </div>
             </div>
-        </div>
+        </section>
 
-    </section>
+        <!-- Projects Grid -->
+       <section id="projects-list" class="container mt-5 border border-1 border-secondary rounded p-4 projects-main-section"
+    data-aos="fade-up">
 
-
-
-
-
-    <!--footer-->
-    <footer class="bg-dark text-white pt-4 pb-2">
-        <div class="container text-center">
-
-            <h5>Abhishek</h5>
-            <p>Web Developer | HTML | CSS | Bootstrap | JavaScript</p>
-
-            <div class="mb-2">
-                <a href="#" class="text-white me-3">Home</a>
-                <a href="#" class="text-white me-3">Projects</a>
-                <a href="#" class="text-white">Contact</a>
+            <div class="text-center mb-5">
+                <span class="text-uppercase main-txt text-white">Portfolio Projects</span>
+                <h2 class="text-white fw-bold mt-2">What I Have Built</h2>
+                <p class="text-light mt-3 mb-0">
+                    A collection of projects that showcase my frontend, layout, responsiveness and development skills.
+                </p>
             </div>
 
-            <p class="mb-0">© 2026 All Rights Reserved</p>
+            <div class="row g-4">
 
-        </div>
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                    <div class="project-page-card h-100">
+                        <div class="project-page-img-wrap">
+                            <img src="images/thumbnail2.jpg" class="project-page-img" alt="E-Commerce Website">
+                        </div>
 
-    </footer>
+                        <div class="project-page-body">
+                            <span class="project-tag">Featured</span>
+                            <h4 class="text-danger fw-bold mt-3">E-Commerce Website</h4>
+                            <p class="text-light mt-3">
+                                Developed a fully responsive E-Commerce website with login, cart, checkout, order flow
+                                and admin-related features.
+                            </p>
+
+                            <ul class="project-feature-list text-light">
+                                <li>User login and registration</li>
+                                <li>Shopping cart and checkout flow</li>
+                                <li>Responsive design for all devices</li>
+                            </ul>
+
+                            <p class="small text-info mt-3 mb-4">
+                                Tech: PHP, MySQL, Bootstrap, HTML, CSS
+                            </p>
+
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-danger w-100 project-card-btn">Live Demo</a>
+                                <a href="#" class="btn btn-outline-light w-100 project-card-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-page-card h-100">
+                        <div class="project-page-img-wrap">
+                            <img src="images/thumbnail3.jpg" class="project-page-img" alt="Portfolio Website">
+                        </div>
+
+                        <div class="project-page-body">
+                            <span class="project-tag">Personal Brand</span>
+                            <h4 class="text-danger fw-bold mt-3">Portfolio Website</h4>
+                            <p class="text-light mt-3">
+                                Created a modern portfolio website with smooth layout, stylish sections, light/dark
+                                mode and responsive design.
+                            </p>
+
+                            <ul class="project-feature-list text-light">
+                                <li>Modern hero and about section</li>
+                                <li>Theme toggle and animations</li>
+                                <li>Responsive portfolio layout</li>
+                            </ul>
+
+                            <p class="small text-info mt-3 mb-4">
+                                Tech: HTML, CSS, Bootstrap, JavaScript
+                            </p>
+
+                            <div class="d-flex gap-2">
+                                <a href="index.html" class="btn btn-danger w-100 project-card-btn">View Website</a>
+                                <a href="https://github.com/codeabhishek1832/Portfolio-Website" class="btn btn-outline-light w-100 project-card-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-page-card h-100">
+                        <div class="project-page-img-wrap">
+                            <img src="images/blog.png" class="project-page-img" alt="Blog Website">
+                        </div>
+
+                        <div class="project-page-body">
+                            <span class="project-tag">Content Project</span>
+                            <h4 class="text-danger fw-bold mt-3">Blog Website</h4>
+                            <p class="text-light mt-3">
+                                Built a modern and responsive blog website with clean UI where users can explore and
+                                read posts easily.
+                            </p>
+
+                            <ul class="project-feature-list text-light">
+                                <li>Clean blog layout design</li>
+                                <li>Responsive reading experience</li>
+                                <li>User-friendly content structure</li>
+                            </ul>
+
+                            <p class="small text-info mt-3 mb-4">
+                                Tech: HTML, CSS, Bootstrap, JavaScript
+                            </p>
+
+                            <div class="d-flex gap-2">
+                                <a href="https://codeabhishek1832.github.io/blog-website/" class="btn btn-danger w-100 project-card-btn">Live Demo</a>
+                                <a href="https://github.com/codeabhishek1832/blog-website" class="btn btn-outline-light w-100 project-card-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Why These Projects -->
+        <section class="container mt-5 border border-1 border-secondary rounded p-4 project-extra-section"
+            data-aos="fade-up">
+            <div class="text-center mb-5">
+                <span class="text-uppercase main-txt text-white">Why These Projects</span>
+                <h2 class="text-white fw-bold mt-2">What They Show About Me</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="project-info-card h-100">
+                        <div class="project-icon-box">💻</div>
+                        <h5 class="text-white mt-3">Practical Skills</h5>
+                        <p class="text-light mb-0">
+                            These projects show my ability to build real and useful websites, not just basic practice
+                            pages.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-info-card h-100">
+                        <div class="project-icon-box">📱</div>
+                        <h5 class="text-white mt-3">Responsive Design</h5>
+                        <p class="text-light mb-0">
+                            I focus on making websites responsive so they work properly on desktop, tablet and mobile.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-info-card h-100">
+                        <div class="project-icon-box">🎨</div>
+                        <h5 class="text-white mt-3">Clean UI</h5>
+                        <p class="text-light mb-0">
+                            I try to keep my designs simple, modern and user-friendly so the experience feels smooth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="container mt-5 border border-1 border-secondary rounded p-4 project-cta-section"
+            data-aos="zoom-in">
+            <div class="text-center">
+                <h2 class="text-white fw-bold">Want to work with me?</h2>
+                <p class="text-light mt-3 mb-4">
+                    I am open to job opportunities, internships and freelance projects.
+                </p>
+                <a href="index.html#contact" class="btn btn-danger px-5 py-2 projects-hero-btn">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white pt-4 pb-2 mt-5" data-aos="fade-up">
+            <div class="container text-center">
+
+                <h5>Abhishek</h5>
+                <p>Web Developer | HTML | CSS | Bootstrap | JavaScript</p>
+
+                <div class="mb-2">
+                    <a href="index.html" class="text-white me-3 footer-link-custom">Home</a>
+                    <a href="project.html" class="text-white me-3 footer-link-custom">Projects</a>
+                    <a href="index.html#contact" class="text-white footer-link-custom">Contact</a>
+                </div>
+
+                <p class="mb-0">© 2026 All Rights Reserved</p>
+
+            </div>
+        </footer>
+
     </main>
 
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 80
+        });
+
+        let themeBtn = document.getElementById("themeBtn");
+        let body = document.body;
+
+        if (localStorage.getItem("theme") === "light") {
+            body.classList.add("light-mode");
+            themeBtn.innerHTML = "☀️ Light";
+        }
+
+        themeBtn.addEventListener("click", function () {
+            body.classList.toggle("light-mode");
+
+            if (body.classList.contains("light-mode")) {
+                themeBtn.innerHTML = "☀️ Light";
+                localStorage.setItem("theme", "light");
+            } else {
+                themeBtn.innerHTML = "🌙 Dark";
+                localStorage.setItem("theme", "dark");
+            }
+        });
+    </script>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                scrollTopBtn.style.display = "flex";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        });
+
+        scrollTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
 </body>
 
 </html>
